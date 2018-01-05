@@ -1,0 +1,93 @@
+# extern #
+#########
+extern/
+
+# EMR input files
+input*.txt
+
+# Compiled Sources #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# IDE files #
+#############
+.project
+.pydevproject
+.idea
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Txt Files containing file paths #
+*.txt
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Autosave files #
+######################
+*.py~
+*.sh~
+*.pyc
+
+# Deep Learning models #
+######################
+*.h5
+*.pb
+
+# Images #
+##########
+*.png
+*.jpg
+*.npy
+
+# Pickle Files #
+###############
+*.pickle
+
+
+# Csv Files #
+#############
+*.csv
+
+# json files #
+##############
+*.json
+
+
+# Tensorboard Events #
+#####################
+events.out.tfevents*
+
+# Other Data Files #
+####################
+*.[Mm][xXiI][dDlL]*
+
