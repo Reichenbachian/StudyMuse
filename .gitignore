@@ -51,6 +51,7 @@ input*.txt
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.ini
 
 # Autosave files #
 ######################
@@ -87,7 +88,7 @@ Thumbs.db
 #####################
 events.out.tfevents*
 
-# Other Data Files #
+# Music Data Files #
 ####################
 *.[Mm][xXiI][dDlL]*
-
+*.als
