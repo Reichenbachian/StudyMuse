@@ -92,3 +92,5 @@ events.out.tfevents*
 ####################
 *.[Mm][xXiI][dDlL]*
 *.alc
+*.als
+*.kar
