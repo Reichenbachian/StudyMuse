@@ -1,6 +1,7 @@
 # extern #
 #########
 extern/
+venv/
 
 # EMR input files
 input*.txt
