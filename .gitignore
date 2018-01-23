@@ -59,6 +59,7 @@ Thumbs.db
 *.py~
 *.sh~
 *.pyc
+*-checkpoint.ipynb
 
 # Deep Learning models #
 ######################
