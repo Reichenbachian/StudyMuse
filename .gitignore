@@ -1,6 +1,7 @@
 # extern #
 #########
 extern/
+*.ipynb_checkpoints*
 
 # EMR input files
 input*.txt
