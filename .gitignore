@@ -1,8 +1,8 @@
 # extern #
 #########
 extern/
-*.ipynb_checkpoints*
-
+venv/
+*ipynb_checkpoints/
 # EMR input files
 input*.txt
 
@@ -59,6 +59,7 @@ Thumbs.db
 *.py~
 *.sh~
 *.pyc
+*-checkpoint.ipynb
 
 # Deep Learning models #
 ######################
