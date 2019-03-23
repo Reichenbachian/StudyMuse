@@ -1,0 +1,1071 @@
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<link href="/css/fonts/font-awesome.min.css" rel="stylesheet" />
+<link href="bootstrap.css" rel="stylesheet">
+<!-- <link href="/css2/bundles/product-page.min.css?v=1.0.6982.22940" rel="stylesheet"> -->
+<script src="jquery.js"></script> 
+<script src="bootstrap.js"></script>
+<script src="Musicnotes.Core.min.js"></script>
+<!-- <link href="/css2/redesign.min.css?v=1.0.6982.22940" rel="stylesheet"> -->
+
+
+
+<link rel="image_src" href="/images/productimages/mtd/MN0054123.gif">
+<link rel="scheme.DC" href="http://purl.org/dc/elements/1.1/">
+<link rel="canonical" href="https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0054123"> 
+
+<html lang="en" moznomarginboxes mozdisallowselectionprint>
+<head>
+    <meta charset="utf-8" />    
+    <title>Digital Sheet Music</title>
+    <style type="text/css">
+        @page {
+            size: auto;
+            margin: 0;
+        }
+        html body div {
+            page-break-after: avoid;
+            page-break-before: avoid;
+            page-break-inside: avoid;
+        }
+        svg {
+            page-break-after: avoid;
+            page-break-before: avoid;
+            page-break-inside: avoid;
+        }
+
+        @font-face {
+            font-family: "Doremi";
+            src: url('/css/fonts/Doremi.woff?v=1.1') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Jive";
+            src: url('/css/fonts/Jive.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Jivetalk";
+            src: url('/css/fonts/Jivetalk.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
+
+<style>
+@media (max-width: 820px){
+#gc-link {
+    display: none;
+}
+
+#account-block{
+margin-left:20px;
+}
+
+#navigation .container-fluid{
+margin-left: 0px;
+}
+
+@media (max-width: 991px){
+#navigation .container-fluid{
+margin-left: 6px;
+}
+}
+}
+
+</style>
+<style>
+.print-quantity-wrapper {display:none;}
+</style>
+
+<style>
+@media (max-width: 967px){
+#hero .bg-mobile {
+    background-color: none !important;
+    background: linear-gradient(to top, rgba(255,0,0,0), #22313f9e) !important;
+    width: 100% !important;}
+</style>
+<script>window.__ss_load_start=new Date();</script>
+<script type="text/javascript" async="" src="https://d26opx5dl8t69i.cloudfront.net/js/jquery-1.11.0.js"></script></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CQ8CLH"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+
+    
+    <div class="modal" id="versionPickerModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="fa fa-close"></i></button>
+            <div class="modal-body">
+                <iframe id="transpose_iframe" frameborder="0" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="print-options-dialog" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" style="text-align: center">Print Options</h4>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="pdPaperSizeType" class="col-sm-5 control-label">Paper Size</label>
+                        <div class="col-sm-7">
+                            <select id="pdPaperSizeType" class="form-control" required=""><option value="2">Letter – 8.5 x 11 in</option><option value="4">Legal – 8.5 x 14 in</option><option value="8">A4 – 210 x 297 mm</option></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pdMarginType" class="col-sm-5 control-label">Margins</label>
+                        <div class="col-sm-7">
+                            <select class="form-control" id="pdMarginType">
+                                <option value="0">Center</option>
+                                <option value="1">To Right</option>
+                                <option value="2">To Left</option>
+                                <option value="3">Pages: Right-Left</option>
+                                <option value="4">Pages: Left-Right</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pdVerticalMarginType" class="col-sm-5 control-label">Vertical</label>
+                        <div class="col-sm-7">
+                            <select class="form-control" id="pdVerticalMarginType">
+                                <option value="2">On Top</option>
+                                <option value="0">Center</option>
+                                <option value="1">On Bottom</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pdVerticalOffsetPoints" class="col-sm-5 control-label">Vertical Adjust</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" type="number" id="pdVerticalOffsetPoints" min="-300" max="300">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pdMinimumBottomMargin" class="col-sm-5 control-label">Bottom Minimum</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" type="number" id="pdMinimumBottomMargin" min="0" max="99">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-3" style="text-align: left">
+                        <input type="button" id="prtBtnPrint" class="btn btn-action" style="width: 80px" value="Print">
+                    </div>
+                    <div class="col-xs-9" style="text-align: right">
+                        <input type="button" id="prtBtnReset" class="btn btn-default" value="Reset">
+                        <input type="button" id="prtBtnApply" class="btn btn-default" value="Apply">
+                        <input type="button" id="prtBtnClose" class="btn btn-default" value="Close">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mn-site-overlay mn-touch-toggle-mobile" data-mn-toggle-class="open" data-mn-toggle-group="nav-links" data-mn-toggle-target="parent"></div>
+
+
+
+<section id="product-top-fold">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5">
+    <form name="printsForm" action="/commerce/basket.asp" method="post" class="mobile-price-area" id="priceDisplayPrintsFormMobile">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="product-price" style="padding-top: 10px">
+                    <span>Price:</span>
+                    <h3 style="margin:0">
+                        <span class="prod-price" id="prod-price">$5.50</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="col-xs-8">
+                <input type="hidden" name="add" value="MN0054123" id="addtocartform-skus-mobile">
+                <button type="submit" id="addToCartBtnMobile" class="add-to-cart btn btn-atc-us ">
+                    Add to Cart&nbsp;&nbsp;
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        
+
+        
+    </form>
+                        <p class="sample-message">
+                                                    </p>
+
+    <div class="row" id="svgplayer">
+
+<div class="row controls">
+
+    <div class="col-xs-5 print-container btn-group">
+            <a href="#" type="button" id="print-sample" class="btn btn-default btn-sm">
+                Print Sample
+            </a>
+            <a href="#" type="button" id="showPrintOptions" class="btn btn-default btn-sm">
+                <i class="fa fa-gear"></i>
+            </a>
+    </div>
+
+    <div class="col-xs-4 controls-wrapper">
+            <div id="pageControls" class="modal-controls">
+                
+                <span id="left" style="display: inline-block; visibility: hidden">
+                    <img src="./index_files/arrow-left.png">
+                </span>
+                    <input id="mBedPageNo" type="text" size="3" value="1">
+                <span id="right" style="display: inline-block; visibility: hidden">
+                    <img src="./index_files/arrow-right.png">
+                </span>
+                
+                <span id="ofPages">of <span id="pageCnt">7</span></span>
+            </div>
+    </div>
+
+    <div class="col-xs-3 playback-container">
+            <div id="helicon-playback">
+                <div class="btn-group" role="group">
+                    <button type="button" id="start-playback" class="btn btn-sm btn-default" disabled="">
+                        <i class="fa fa-play"></i>
+                    </button>
+                    <button type="button" id="stop-playback" class="btn btn-sm btn-default" disabled="">
+                        <i class="fa fa-stop"></i>
+                    </button>
+                </div>
+            </div>
+    </div>
+
+</div>
+<div id="productDisplay" class="svg-product-display">
+    <div id="embeddedArrowWrapper" class="row">
+        <div id="previewPageLeft" class="col-xs-4">
+            <i class="fa fa-chevron-left"></i>&nbsp;
+        </div>
+        <div class="col-xs-4">&nbsp;</div>
+        <div id="previewPageRight" class="col-xs-4 scrollspace">
+            &nbsp;<i class="fa fa-chevron-right"></i>
+        </div>
+    </div>
+        <div id="svgWin" class="scrollingParent" style="overflow: hidden;">
+            
+            <svg id="productSvg" class="playbackCanvas" style="width: 499px; height: 665px;" viewBox="0 0 12960 17271.3"><g transform="matrix(1 0 0 1 0 0)"></g></svg>
+            
+        </div>
+    <div id="canvasWin" class="scrollingParent">
+        <canvas id="productCanvas" style="display: none" class="playbackCanvas">
+        </canvas>
+    </div>
+    <div id="fullPreviewLoadingOverlay">
+        <div id="fullPreviewLoadingSpinner" class="fa fa-spin fa-spinner"></div>
+    </div>
+</div>
+    <iframe id="invisible" name="invisible" style="visibility: hidden; margin: 0; padding: 0; border: none; height: 1px;" src="./index_files/pagePrintMwin.html"></iframe>
+    </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-7 product-side-bar">
+<div class="row product-title-wrapper-row">
+    <div class="col-sm-12">
+        <div id="product-title-wrapper">
+            <h1>Alive
+                <span class="product-title-byline">
+                    By Building 429 - Digital Sheet Music
+                </span>
+            </h1>
+        </div>
+    </div>
+</div>
+
+
+<div id="sidebar-wrapper">
+    <div class="price-info">
+
+
+
+<form name="printsForm" action="/commerce/basket.asp" method="post" class="printsForm" id="priceDisplayPrintsForm">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+
+                    <div class="product-price">
+                        <h3 class="">
+                            Price:&nbsp;&nbsp;<span class="prod-price" id="prod-price" data-is-alternative-price="False" data-active-alternative-price-segment-ids="2,3,4,5,6,7,8,9,10">$5.50&nbsp;</span>
+                                                </h3>
+                                            </div>
+                                        <div class="included-prints">
+
+                                            Includes 1 print + interactive copy with lifetime access in our free apps.<br>
+                                            <span>Each additional print is $3.99</span>
+                                                <div class="print-quantity-wrapper">
+                                                    <span class="prints-label">Print(s)</span>
+
+                                                    <input id="prints" name="prints" value="1" type="number" min="1" max="500" class="numPrints">
+                                                </div>
+                                        </div>
+
+<div class="PDFCheckbox"><label class="checkbox-inline"><input type="checkbox" id="pdf-upsell-checkbox-mobile">Add a PDF download for just $2 more</label>
+<br>
+<p class="pdf-checkbox-subtitle" style="font-size:12px !important; color: #808080 !important; margin-bottom: -5px;">Your high-resolution PDF file will be ready to download in 
+                the original published key
+        </p></div><div class="dropdown">
+    <div class="dropbtn btn">Transpose (0)<i class="icon-space fa fa-caret-down"></i></div>
+    <div id="Transpose" class="dropdown-content">
+            <p class="no-transpositions">No transpositions available</p>
+    </div>
+</div>
+
+        </div>
+
+            <div class="col-sm-12 col-md-6 product-action-buttons">
+                
+                    <input type="hidden" name="add" value="MN0054123" id="addtocartform-skus" data-external-sku="" data-pdf-sku="PF0054123">
+
+                    <button type="submit" id="addToCartBtn" class="add-to-cart btn btn-atc-us mobile-hidden">
+                        Add to Cart&nbsp;&nbsp;
+                            <i class="fa fa-arrow-right"></i>
+                    </button>
+
+                    <div name="qcoContainer" style="display: none">
+                        <p class="or-line">
+                            <span>OR</span>
+                        </p>
+                        <button type="submit" name="useQCO" id="useQCO" value=" " class="btn buyNowBtn">Buy Now</button>
+                    </div>
+
+
+            </div>
+    </div>
+</form>
+
+
+      
+    </div>
+
+    <div class="row">
+    <div class="col-xs-6">
+    <h3 class="quick-details-header">Quick Details</h3>
+        </div>
+
+    </div>
+
+    <div id="zuus-container">
+        <p id="zuus-blurb">Related Video</p>
+    </div>
+
+    <div class="sidebar-title">
+
+        <div class="title-container">
+            <h3 class="sidebar-subhead">Quick Details</h3>
+        </div>
+    </div>
+
+    <div class="quick-details-wrapper">
+
+
+<div class="table-bordered table-responsive">
+    <table class="table quick-details-table">
+        <tbody>
+                <tr>
+                    <th>
+                        <label class="qd-label">Scoring:</label>
+                    </th>
+                    <td>
+                            <span class="qd-info">Piano/Vocal/Chords</span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>
+                        <label class="qd-label">Instruments:</label>
+                    </th>
+                    <td>
+                                        <span class="qd-info">Voice, range: G3-G5</span>
+            <span class="qd-info">Piano</span>
+
+                    </td>
+                </tr>
+
+
+
+
+            <tr>
+                <th>
+                    <label class="qd-label">Pages:</label>
+                </th>
+                <td>
+                    <span class="qd-info">7</span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th>
+                    <label class="qd-label">Product #:</label>
+                </th>
+                <td>
+                    <span class="qd-info">MN0054123</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label class="qd-label">Lyrics:</label>
+                </th>
+                <td>
+                    <span class="qd-info">Contains complete lyrics</span>
+                </td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+</div>
+
+<a class="quick-details-button" href="#ProductDetails">View Full Product Details</a>
+    </div>
+
+</div>
+   
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="information-tabs">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+
+<div id="social">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="product-info-header">
+                <h2>
+                    Product Information
+                    <span class="product-info-byline">Alive by Building 429 - Digital Sheet Music
+                    </span>
+                </h2>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="social-share-desktop" style="float:right;">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ProductDetails" class="product-info-wrapper">
+
+    
+<section id="product-information">
+<div class="container-fluid">
+<div id="product-info-tabs" class="product-info-tabs">
+    <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist" id="info-tab">
+            <li role="presentation" class="active"><a href="#glance" aria-controls="glance" role="tab" data-toggle="tab">At a Glance</a></li>
+            <li role="presentation"><a href="#arrangement" aria-controls="arrangement" role="tab" data-toggle="tab">Arrangement Details</a></li>
+            <li role="presentation"><a href="#song" aria-controls="song" role="tab" data-toggle="tab">Song Details</a></li>
+            <li role="presentation"><a href="#related" aria-controls="related" role="tab" data-toggle="tab">Related Products</a></li>
+            <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab" id="reviews-tab-link">Reviews</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="glance">
+<div id="ProductBlurb" class="row">
+    <div class="col-sm-7">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol vocab="http://schema.org/" typeof="BreadcrumbList" class="product-breadcrumbs-list">
+
+                    <li property="itemListElement" typeof="ListItem">
+                        
+                            <a property="item" typeof="WebPage" href="/">
+                                <span property="name">Home</span>
+                            </a>
+                        <meta property="position" content="1">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        
+                            <a property="item" typeof="WebPage" href="/sheet-music/artist/building-429">
+                                <span property="name">Building 429</span>
+                            </a>
+                        <meta property="position" content="2">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        
+                            <a property="item" typeof="WebPage" href="/sheetmusic/alive/16072">
+                                <span property="name">Alive</span>
+                            </a>
+                        <meta property="position" content="3">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        
+                            <a property="item" typeof="WebPage" href="/sheetmusic/mtd.asp?ppn=MN0054123">
+                                <span property="name">Piano/Vocal/Chords</span>
+                            </a>
+                        <meta property="position" content="4">
+                    </li>
+            </ol>
+        </div>
+    </div>
+
+            <h5>
+                <strong>Alive</strong>
+                digital sheet music.
+                Contains printable sheet music plus an interactive,
+                downloadable digital sheet music file.
+            </h5>
+
+        <ul>
+                <li>
+                    Contains complete lyrics
+                </li>
+            <li>
+                    This product is available worldwide
+            </li>
+        </ul>
+                    </div>
+<div class="col-sm-5 tabber-promo">
+</div>
+</div>
+
+<div class="info-table">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td class="glance-label">
+                    <p>Title:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p>Alive</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="glance-label">
+                    <p>By:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p>
+                                <a href="/sheet-music/artist/building-429">Building 429</a>
+
+                    </p>
+                </td>
+            </tr>
+                <tr>
+                    <td class="glance-label">
+
+                        <p>Instruments:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                                    <span class="col-sm-12 col-xs-12">Voice, range: G3-G5</span>
+            <span class="col-sm-12 col-xs-12">Piano</span>
+
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="glance-label">
+                        <p>Scorings:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                            <p>Piano/Vocal/Chords</p>
+                    </td>
+                </tr>
+                    <tr>
+            <td class="glance-label">
+                <p>Original Published Key:</p>
+            </td>
+            <td class="glance-info" colspan="2">
+                <p>C Major</p>
+            </td>
+        </tr>
+                <tr>
+        <td class="glance-label">
+            <p>Product Type:</p>
+        </td>
+        <td class="glance-info product-type-text">
+            <p>Musicnotes</p>
+        </td>
+    </tr>
+
+            <tr>
+                <td class="glance-label">
+                    <p>Product #:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p>MN0054123</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="glance-label">
+                    <p>Price:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <div>
+                        <span>
+                            $5.50
+                        </span>
+                        <div>
+                            <small>
+
+                                Includes 1 print + interactive copy with lifetime access in our free apps.<br>
+                                <span>Each additional print is $3.99</span>
+                            </small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="glance-label">
+                    <p>Number of Pages:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p>7</p>
+                </td>
+            </tr>
+                                        <tr>
+                    <td class="glance-label">
+                        <p>Lyrics Begin:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                        <p><i>Can you believe that all this time has passed us and all we were has left us wishing we were there again?</i></p>
+                    </td>
+                </tr>
+        </tbody>
+
+    </table>
+</div>
+</div>
+            <div role="tabpanel" class="tab-pane" id="arrangement"><div class="row">
+    <div class="col-sm-7">
+        <div class="info-text">
+            <h5>The <strong>Arrangement Details Tab</strong> gives you detailed information about this particular arrangement of <strong>Alive</strong> - not necessarily the song.</h5>
+
+            <h5><strong>Not the arrangement you were looking for?</strong> <a href="/landing?qsongid=16072&amp;songname=Alive">View All Arrangements</a></h5>
+        </div>
+    </div>
+<div class="col-sm-5 tabber-promo">
+</div>
+</div>
+
+<div class="info-table">
+    <table class="table table-striped">
+        <tbody>
+                <tr>
+                    <td class="glance-label">
+                        <p>By:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                        <p>Building 429</p>
+                    </td>
+                </tr>
+                                    <tr>
+                <td class="glance-label">
+                    <p>Number of Pages:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p>7</p>
+                </td>
+            </tr>
+                <tr>
+                    <td class="glance-label">
+                        <p>Form:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                            <p>Song</p>
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="glance-label">
+                        <p>Instruments:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                                    <span class="col-sm-12 col-xs-12">Voice, range: G3-G5</span>
+            <span class="col-sm-12 col-xs-12">Piano</span>
+
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="glance-label">
+                        <p>Scoring:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                            <p>Piano/Vocal/Chords</p>
+                    </td>
+                </tr>
+            
+                    <tr>
+            <td class="glance-label">
+                <p>Original Published Key:</p>
+            </td>
+            <td class="glance-info" colspan="2">
+                <p>C Major</p>
+            </td>
+        </tr>
+
+                <tr>
+        <td class="glance-label">
+            <p>Product Type:</p>
+        </td>
+        <td class="glance-info product-type-text">
+            <p>Musicnotes</p>
+        </td>
+    </tr>
+
+                <tr>
+        <td class="glance-label">
+            <p>Product #:</p>
+        </td>
+        <td class="glance-info" colspan="2">
+            <p>MN0054123</p>
+        </td>
+    </tr>
+
+                <tr>
+                    <td class="glance-label">
+                        <p>Tempo:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                        <p>Steady four</p>
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="glance-label">
+                        <p>Metronome:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                        <p>q = 84</p>
+                    </td>
+                </tr>
+                                        <tr>
+                    <td class="glance-label">
+                        <p>Styles:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                            <p>CCM</p>
+                            <p>Christian Rock</p>
+                            <p>Rock</p>
+                            <p>Christian</p>
+                            <p>Alternative CCM</p>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</div></div>
+            <div role="tabpanel" class="tab-pane" id="song"><div class="row">
+    <div class="col-sm-7">
+        <div class="info-text">
+            <h5>The <strong>Song Details Tab</strong> gives you detailed information about this song, <strong>Alive</strong></h5>
+        </div>
+    </div>
+<div class="col-sm-5 tabber-promo">
+</div>
+</div>
+
+<div class="info-table">
+    <table class="table table-striped">
+            <tbody><tr>
+                <td class="glance-label">
+                    <p>Composers:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                        <p>
+
+                            <a href="/landing?w=Jason+Roy">Jason Roy</a>
+                        </p>
+                        <p>
+
+                            <a href="/landing?w=Scotty+Beshears">Scotty Beshears</a>
+                        </p>
+                        <p>
+
+                            <a href="/landing?w=Michael+Anderson">Michael Anderson</a>
+                        </p>
+                        <p>
+
+                            <a href="/landing?w=Jesse+Garcia">Jesse Garcia</a>
+                        </p>
+                </td>
+            </tr>
+                    <tr>
+                <td class="glance-label">
+                    <p>Lyricists:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                        <p>
+
+                            <a href="/landing?w=Jason+Roy">Jason Roy</a>
+                        </p>
+                        <p>
+
+                            <a href="/landing?w=Scotty+Beshears">Scotty Beshears</a>
+                        </p>
+                        <p>
+
+                            <a href="/landing?w=Michael+Anderson">Michael Anderson</a>
+                        </p>
+                        <p>
+
+                            <a href="/landing?w=Jesse+Garcia">Jesse Garcia</a>
+                        </p>
+                </td>
+            </tr>
+                <tr>
+            <td class="glance-label">
+                <p>Date:</p>
+            </td>
+            <td class="glance-info" colspan="2">
+                <p>2006</p>
+            </td>
+        </tr>
+            <tr>
+                <td class="glance-label">
+                    <p>Publisher:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p>
+
+                        <a href="/landing?qpublisher=%22Word+Music%22">Word Music</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+        <td class="glance-label">
+            <p>Product Type:</p>
+        </td>
+        <td class="glance-info product-type-text">
+            <p>Musicnotes</p>
+        </td>
+    </tr>
+
+            <tr>
+        <td class="glance-label">
+            <p>Product #:</p>
+        </td>
+        <td class="glance-info" colspan="2">
+            <p>MN0054123</p>
+        </td>
+    </tr>
+
+            <tr>
+                <td class="glance-label">
+                    <p>Lyrics Begin:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p><em>Can you believe that all this time has passed us and all we were has left us wishing we were there again?</em></p>
+                </td>
+            </tr>
+        
+                <tr>
+            <td class="glance-label">
+                <p>From the Album:</p> 
+            </td>
+            <td class="glance-info" colspan="2">
+                    <p>
+                        <a href="/landing?qalbum=%22Building+429+-+Rise%22">Building 429 - Rise</a>
+                                                </p>
+            </td>
+        </tr>
+
+                <tr>
+            <td class="glance-label">
+                <p>From the Book:</p> 
+            </td>
+            <td class="glance-info" colspan="2">
+                    <p>Rise</p>
+            </td>
+        </tr>
+
+    </tbody></table>
+</div>
+</div>
+            <div role="tabpanel" class="tab-pane" id="related"><div class="row">
+    <div class="col-sm-7">
+        <div class="info-text">
+            <h5>The <strong>Related Products</strong> tab shows you other products that you may also like, if you like <strong>Alive</strong></h5>
+        </div>
+    </div>
+<div class="col-sm-5 tabber-promo">
+</div>
+</div>
+
+<div class="info-table">
+    <table class="table table-striped">
+        <tbody>
+            
+                <tr>
+                    <td class="glance-label">
+                        <p>By:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                        <p>
+                                    <a href="/sheet-music/artist/building-429">Building 429</a>
+
+                        </p>
+                    </td>
+                </tr>
+                            <tr>
+                    <td class="glance-label">
+                        <p>You May Also Like:</p>
+                    </td>
+                    <td class="glance-info" colspan="2">
+                            <p>
+                                <a href="/sheetmusic/mtd.asp?ppn=MN0050273">No One Else Knows</a> (Building 429)
+                            </p>
+                            <p>
+                                <a href="/sheetmusic/mtd.asp?ppn=MN0100321">Where I Belong</a> (Building 429)
+                            </p>
+                            <p>
+                                <a href="/sheetmusic/mtd.asp?ppn=MN0095472">Listen To the Sound</a> (Building 429)
+                            </p>
+                    </td>
+                </tr>
+            <tr>
+                <td class="glance-label">
+                    <p>Arrangements of This Song:</p>
+                </td>
+                <td class="glance-info" colspan="2">
+                    <p>
+
+                        <a href="/landing?qsongid=16072&amp;songname=Alive">View All</a>
+                    </p>
+                </td>
+            </tr>
+                <tr>
+        <td class="glance-label">
+            <p>Product Type:</p>
+        </td>
+        <td class="glance-info product-type-text">
+            <p>Musicnotes</p>
+        </td>
+    </tr>
+
+                <tr>
+        <td class="glance-label">
+            <p>Product #:</p>
+        </td>
+        <td class="glance-info" colspan="2">
+            <p>MN0054123</p>
+        </td>
+    </tr>
+
+            
+                    <tr>
+            <td class="glance-label">
+                <p>More Songs From the Album:</p> 
+            </td>
+            <td class="glance-info" colspan="2">
+                    <p>
+                        <a href="/landing?qalbum=%22Building+429+-+Rise%22">Building 429 - Rise</a>
+                                                </p>
+            </td>
+        </tr>
+
+                    <tr>
+            <td class="glance-label">
+                <p>From the Book:</p> 
+            </td>
+            <td class="glance-info" colspan="2">
+                    <p>Rise</p>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div></div>
+            <div role="tabpanel" class="tab-pane" id="reviews">
+
+    <h5>
+            There are no reviews written for Alive. 
+                    <br>
+            <strong>
+                In order to write a review on digital sheet music
+                you must first have purchased the item.
+            </strong>
+    </h5>
+    <script>
+        window.ratingActionUrl = "/Product/RecordRating";
+        window.shopperId = "L4GYCPLUCQVXPMM17KL5TLGGYLWWLVMV";
+    </script>
+</div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+    
+        <section class="publisher-information">
+            <div class="container-fluid">
+                <div class="publisher-information">
+
+                    <span>Publishing administered by: <b><a href="/landing?qpublisher=%22Word+Music%22">Word Music</a></b></span>
+                </div>
+            </div>
+        </section>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </section>
+
+       <link href="/css/fonts/font-awesome.min.css" rel="stylesheet" />
+      <link href="/bootstrap.css" rel="stylesheet">
+      <script src="jquery.js"></script>
+      <script src="bootstrap.js"></script>
+      <script src="Helicon.js"></script>
+      <script src="Aoide.js"></script>
+      <script src="Melete.js"></script>
+      <script src="Clio.js"></script>
+      <script src="Canvas.js"></script>
+      <script src="Embedded.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+             Embedded(  
+                 {  
+                     'Ppn': "MN0054123",
+                     'Hex': "73D63EFAF954A1A1",
+                     'Cid': "L4GYCPLUCQVXPMM17KL5TLGGYLWWLVMV"
+                 },
+                 {   
+                     'DefaultToLetterPaper': true,
+                     'ChordPlaybackHandling' : 1,
+                     'ScrollToStartPlay' : 1, // 0: no scroll, 1: gradual, 2: immediate
+                     'ScrollInternally' : true,
+                     'PrintMusicnotesLogoText' : false,
+                     'NoFullPreview': false, 
+                     'AnimatePlayback': true
+                 }   
+             );
+         });
+      </script>
+
+
+</body>
+</html>
