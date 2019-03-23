@@ -6,6 +6,10 @@ venv/
 # EMR input files
 input*.txt
 
+# Large Folders #
+#################
+DataAquisition/DesktopAttack/*
+
 # Compiled Sources #
 ###################
 *.com
